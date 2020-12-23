@@ -22,7 +22,6 @@ fetch('http://localhost:3000/weather?address=' + location).then((response) => {
         }else{
             messageOne.textContent = data.location;
             messageTwo.textContent = data.forecast;
-            console.log(data);
         }
     })
 });
