@@ -17,7 +17,7 @@ const forecast = (latitude, longitude, callback) => {
             console.log('Error, Missing query');
         }else{
 
-            callback(undefined, `${body.current.weather_descriptions}. It is currently ${body.current.temperature} degrees in ${body.location.region}. There is a ${body.current.precip}% chance of rain`)
+            callback(undefined, `${body.current.weather_descriptions}. It is currently ${body.current.temperature} degrees in ${body.location.region}. There is a ${body.current.precip}% chance of rain. The humidity for today is ${body.current.humidity}.`)
             
         }
     })
